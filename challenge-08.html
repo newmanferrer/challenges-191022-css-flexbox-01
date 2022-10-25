@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./challenge-08.css" />
+    <title>CSS Challenge 08</title>
+  </head>
+  <body>
+    <form class="form">
+      <fieldset class="form__fieldset">
+        <legend class="fieldset__legend">Personal information</legend>
+
+        <label class="fieldset__label" for="email">Email address</label>
+        <input
+          class="fieldset__input"
+          type="email"
+          required
+          name="email"
+          id="email"
+          placeholder="Enter email"
+        />
+        <span class="fieldset__span">We'll never share your email with anyone else</span>
+
+        <label class="fieldset__label" for="password">Password</label>
+        <input
+          class="fieldset__input"
+          type="password"
+          required
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <span class="fieldset__span">Check me out</span>
+
+        <button class="fieldset__button" type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

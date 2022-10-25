@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #333;
+}
+
+.form__fieldset {
+  padding: 1.5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.fieldset__legend {
+  padding: 0 0.5rem;
+}
+
+.fieldset__label {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.fieldset__input {
+  padding: 0.3rem;
+
+  outline: none;
+  border: none;
+
+  border-radius: 3px;
+}
+
+.fieldset__span {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.fieldset__button {
+  width: 50%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  transition: all 0.5s ease-in-out;
+
+  border: 2px solid transparent;
+  border-radius: 3px;
+  background-color: #1385fb;
+}
+
+.fieldset__button:hover {
+  cursor: pointer;
+  color: #1385fb;
+  border: 2px solid #1385fb;
+  background-color: white;
+}

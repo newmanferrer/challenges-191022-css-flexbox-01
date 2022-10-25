@@ -1,0 +1,339 @@
+/** Reset **/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+
+  font: 75% georgia, sans-serif;
+  line-height: 1.88889;
+  color: #555753;
+
+  background-image: url(./assets/images/challenge-12-02.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #fff;
+}
+
+/** Common **/
+p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+h3 {
+  color: #7d775c;
+  font: italic normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+}
+
+a:link {
+  color: #b7a5df;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d4cddc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #9685ba;
+  text-decoration: underline;
+}
+
+abbr {
+  border-bottom: none;
+}
+
+/** specific divs **/
+.page-wrapper {
+  width: 100%;
+  padding: 0 10px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-image: url(./assets/images/challenge-12-01.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.intro {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header {
+  height: 87px;
+  padding-top: 20px;
+}
+
+header h1 {
+  width: 215px;
+  height: 87px;
+  margin: 10px 0;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background: transparent url(./assets/images/challenge-12-h1.gif) no-repeat top left;
+}
+
+header h2 {
+  width: 200px;
+  height: 18px;
+  margin: 10px 0;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background: transparent url(./assets/images/challenge-12-h2.gif) no-repeat top left;
+}
+
+.summary {
+  width: 100%;
+  margin: 20px 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.summary p {
+  font: italic 1.1em/2.2 georgia;
+  text-align: center;
+}
+
+.preamble {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.supporting {
+  width: 100%;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a:link,
+footer a:visited {
+  margin-right: 20px;
+}
+
+.sidebar {
+  width: 100%;
+  margin-bottom: 120px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+
+  font: 10px verdana, sans-serif;
+
+  background-image: url(./assets/images/challenge-12-paper-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.sidebar h3.select {
+  width: 97px;
+  height: 16px;
+  margin: 10px 0 5px 0;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background: transparent url(./assets/images/challenge-12-h3.gif) no-repeat top left;
+}
+
+.sidebar h3.archives {
+  width: 57px;
+  height: 14px;
+  margin: 10px 0 5px 0;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background: transparent url(./assets/images/challenge-12-h5.gif) no-repeat top left;
+}
+
+.sidebar h3.resources {
+  width: 63px;
+  height: 10px;
+  margin: 10px 0 5px 0;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background: transparent url(./assets/images/challenge-12-h6.gif) no-repeat top left;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+  padding-top: 5px;
+
+  display: block;
+  line-height: 1.3em;
+  list-style-type: none;
+
+  background: transparent url(./assets/images/challenge-12-cr1.gif) no-repeat top center;
+}
+
+.sidebar li a:link {
+  color: #988f5e;
+}
+
+.sidebar li a:visited {
+  color: #b3ae94;
+}
+
+/** Media Queries **/
+@media screen and (min-width: 576px) {
+  .intro {
+    width: 60%;
+    padding: 0 0.5rem;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+
+  header {
+    margin-left: 100px;
+  }
+
+  .sidebar {
+    width: 38%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .wrapper > div {
+    margin-left: 2.5rem;
+  }
+
+  .supporting {
+    width: 100%;
+    padding: 1rem;
+
+    position: absolute;
+    top: 550px;
+    left: 0;
+  }
+
+  .extra1 {
+    width: 110px;
+    height: 110px;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    background: transparent url(./assets/images/challenge-12-cr2.gif) top left no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-attachment: fixed;
+  }
+
+  .intro {
+    width: 80%;
+  }
+
+  .sidebar {
+    width: 20%;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .summary {
+    width: 80%;
+    margin-top: 3rem;
+    padding: 1rem 0;
+
+    font-size: 1.5rem;
+
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px green;
+  }
+}
